@@ -1,0 +1,137 @@
+@font-face{
+    font-family: 'my-font';
+    src : url('font/IRANSansWeb_Medium.woff2') format('woff2');
+}
+body{
+    background-image: url("images/bg.jpg");
+    color: #fff;
+    font-family: 'my-font' , 'myriad pro' , tahoma;
+    direction: rtl;
+}
+.main{
+    width: 25%;
+    margin :0 auto;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+h1{
+    margin: 30px 0 30px;
+    font-size: 3.5rem;
+}
+h3{
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+}
+.my-input{
+    position: relative;
+    padding: 5px 0;
+    margin : 20px 0 50px;
+    text-align: right;
+    border-bottom: 2px solid #fff;
+}
+.my-input input{
+    width: 100%;
+    display: block;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    font-size: 1rem;
+    border: 0;
+}
+::placeholder{
+    color: white;
+    font-family: 'my-font';
+}
+.my-input input:focus{
+    outline: none;
+}
+.my-input span{
+    position: absolute;
+    float: left;
+    left: 0;
+    top: 20%;
+}
+input{
+    text-align: right;
+}
+.log-in a:hover button{
+    background-color: #0066c0;
+    border : 2px solid #0066c0;
+    transition: all .3s ease-in-out;
+}
+.log-in a button{
+    width: 100%;
+    height: 60px;
+    color: white;
+    background-color: #1d89e4;
+    border : 2px solid #1d89e4;
+    border-radius: 4px;
+    font-family: 'my-font';
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.container {
+    display: block;
+    position: relative;
+    float: right;
+    font-size: 13px;
+    padding-right: 22px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.checkmark {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 2.5px;
+    height: 17px;
+    width: 17px;
+    border-radius: 4px;
+    background-color: #fff;
+} 
+.container input:checked ~ .checkmark {
+    background-color: #fff;
+}
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+.container .checkmark:after {
+    left: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid #1d89e4;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}  
+.my-check a{
+    font-size: 13px;
+    float: left;
+}
+.file-img{
+    margin: 70px 0 0;
+}
+.file-img img{
+    width: 40px;
+    height:auto;
+}
